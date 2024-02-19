@@ -1,0 +1,39 @@
+Starting test with workers=32
+Launched task.. waiting
+Result : uname_result(system='Linux', node='exp-9-56', release='4.18.0-477.15.1.el8_8.x86_64', version='#1 SMP Wed Jun 28 15:04:18 UTC 2023', machine='x86_64')
+[num_workers=32][task_count=100][sleep_dur=0][input_data=0][output_data=0]Launched tasks in 0.028s
+[num_workers=32][task_count=100][sleep_dur=0][input_data=0][output_data=0]Finished noop tasks in 0.046s
+[num_workers=32][task_count=100][sleep_dur=0][input_data=0][output_data=0]Throughput  2165.238 Tasks/s
+[num_workers=32][task_count=100][sleep_dur=1][input_data=0][output_data=0]Launched tasks in 0.027s
+[num_workers=32][task_count=100][sleep_dur=1][input_data=0][output_data=0]Finished noop tasks in 0.045s
+[num_workers=32][task_count=100][sleep_dur=1][input_data=0][output_data=0]Throughput  2228.902 Tasks/s
+[num_workers=32][task_count=200][sleep_dur=0][input_data=0][output_data=0]Launched tasks in 0.061s
+[num_workers=32][task_count=200][sleep_dur=0][input_data=0][output_data=0]Finished noop tasks in 0.078s
+[num_workers=32][task_count=200][sleep_dur=0][input_data=0][output_data=0]Throughput  2558.220 Tasks/s
+[num_workers=32][task_count=200][sleep_dur=1][input_data=0][output_data=0]Launched tasks in 0.074s
+[num_workers=32][task_count=200][sleep_dur=1][input_data=0][output_data=0]Finished noop tasks in 0.091s
+[num_workers=32][task_count=200][sleep_dur=1][input_data=0][output_data=0]Throughput  2201.555 Tasks/s
+[num_workers=32][task_count=100][sleep_dur=0][input_data=4][output_data=4]Launched tasks in 1.900s
+[num_workers=32][task_count=100][sleep_dur=0][input_data=4][output_data=4]Finished noop tasks in 1.924s
+[num_workers=32][task_count=100][sleep_dur=0][input_data=4][output_data=4]Throughput  51.965 Tasks/s
+[num_workers=32][task_count=100][sleep_dur=1][input_data=4][output_data=4]Launched tasks in 1.790s
+[num_workers=32][task_count=100][sleep_dur=1][input_data=4][output_data=4]Finished noop tasks in 1.816s
+[num_workers=32][task_count=100][sleep_dur=1][input_data=4][output_data=4]Throughput  55.068 Tasks/s
+[num_workers=32][task_count=200][sleep_dur=0][input_data=4][output_data=4]Launched tasks in 3.685s
+[num_workers=32][task_count=200][sleep_dur=0][input_data=4][output_data=4]Finished noop tasks in 3.709s
+[num_workers=32][task_count=200][sleep_dur=0][input_data=4][output_data=4]Throughput  53.924 Tasks/s
+[num_workers=32][task_count=200][sleep_dur=1][input_data=4][output_data=4]Launched tasks in 3.752s
+[num_workers=32][task_count=200][sleep_dur=1][input_data=4][output_data=4]Finished noop tasks in 3.783s
+[num_workers=32][task_count=200][sleep_dur=1][input_data=4][output_data=4]Throughput  52.874 Tasks/s
+[num_workers=32][task_count=100][sleep_dur=0][input_data=8][output_data=8]Launched tasks in 4.496s
+[num_workers=32][task_count=100][sleep_dur=0][input_data=8][output_data=8]Finished noop tasks in 4.538s
+[num_workers=32][task_count=100][sleep_dur=0][input_data=8][output_data=8]Throughput  22.038 Tasks/s
+[num_workers=32][task_count=100][sleep_dur=1][input_data=8][output_data=8]Launched tasks in 4.247s
+[num_workers=32][task_count=100][sleep_dur=1][input_data=8][output_data=8]Finished noop tasks in 4.282s
+[num_workers=32][task_count=100][sleep_dur=1][input_data=8][output_data=8]Throughput  23.353 Tasks/s
+[num_workers=32][task_count=200][sleep_dur=0][input_data=8][output_data=8]Launched tasks in 8.482s
+[num_workers=32][task_count=200][sleep_dur=0][input_data=8][output_data=8]Finished noop tasks in 8.522s
+[num_workers=32][task_count=200][sleep_dur=0][input_data=8][output_data=8]Throughput  23.470 Tasks/s
+[num_workers=32][task_count=200][sleep_dur=1][input_data=8][output_data=8]Launched tasks in 8.403s
+[num_workers=32][task_count=200][sleep_dur=1][input_data=8][output_data=8]Finished noop tasks in 8.450s
+[num_workers=32][task_count=200][sleep_dur=1][input_data=8][output_data=8]Throughput  23.669 Tasks/s
