@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-for node in 4 8 16
+for node in 1 2 4 8 16
 do
     tasks=$((node * 32 * 2))
     LOG="test_log.${node}nodes.${tasks}tasks.32workers.log"
