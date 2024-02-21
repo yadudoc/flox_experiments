@@ -1,0 +1,21 @@
+Starting test with workers=
+Launched task.. waiting
+Result : uname_result(system='Linux', node='exp-9-05', release='4.18.0-477.15.1.el8_8.x86_64', version='#1 SMP Wed Jun 28 15:04:18 UTC 2023', machine='x86_64')
+[num_workers=32][task_count=64][sleep_dur=0][input_data=0][output_data=0]Launched tasks in 0.017s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=0][output_data=0]Finished noop tasks in 0.036s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=0][output_data=0]Throughput  1769.375 Tasks/s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=0][output_data=0]Launched tasks in 0.015s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=0][output_data=0]Finished noop tasks in 0.035s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=0][output_data=0]Throughput  1821.643 Tasks/s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=4][output_data=4]Launched tasks in 1.253s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=4][output_data=4]Finished noop tasks in 1.278s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=4][output_data=4]Throughput  50.091 Tasks/s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=4][output_data=4]Launched tasks in 1.240s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=4][output_data=4]Finished noop tasks in 1.270s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=4][output_data=4]Throughput  50.378 Tasks/s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=8][output_data=8]Launched tasks in 2.771s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=8][output_data=8]Finished noop tasks in 2.806s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=8][output_data=8]Throughput  22.807 Tasks/s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=8][output_data=8]Launched tasks in 2.603s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=8][output_data=8]Finished noop tasks in 2.641s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=8][output_data=8]Throughput  24.232 Tasks/s

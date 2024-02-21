@@ -1,0 +1,21 @@
+Starting test with workers=
+Launched task.. waiting
+Result : uname_result(system='Linux', node='exp-14-06', release='4.18.0-477.15.1.el8_8.x86_64', version='#1 SMP Wed Jun 28 15:04:18 UTC 2023', machine='x86_64')
+[num_workers=512][task_count=1024][sleep_dur=0][input_data=0][output_data=0]Launched tasks in 0.350s
+[num_workers=512][task_count=1024][sleep_dur=0][input_data=0][output_data=0]Finished noop tasks in 0.376s
+[num_workers=512][task_count=1024][sleep_dur=0][input_data=0][output_data=0]Throughput  2723.626 Tasks/s
+[num_workers=512][task_count=1024][sleep_dur=1][input_data=0][output_data=0]Launched tasks in 0.335s
+[num_workers=512][task_count=1024][sleep_dur=1][input_data=0][output_data=0]Finished noop tasks in 0.351s
+[num_workers=512][task_count=1024][sleep_dur=1][input_data=0][output_data=0]Throughput  2921.148 Tasks/s
+[num_workers=512][task_count=1024][sleep_dur=0][input_data=4][output_data=4]Launched tasks in 20.813s
+[num_workers=512][task_count=1024][sleep_dur=0][input_data=4][output_data=4]Finished noop tasks in 20.846s
+[num_workers=512][task_count=1024][sleep_dur=0][input_data=4][output_data=4]Throughput  49.122 Tasks/s
+[num_workers=512][task_count=1024][sleep_dur=1][input_data=4][output_data=4]Launched tasks in 18.805s
+[num_workers=512][task_count=1024][sleep_dur=1][input_data=4][output_data=4]Finished noop tasks in 18.831s
+[num_workers=512][task_count=1024][sleep_dur=1][input_data=4][output_data=4]Throughput  54.380 Tasks/s
+[num_workers=512][task_count=1024][sleep_dur=0][input_data=8][output_data=8]Launched tasks in 46.941s
+[num_workers=512][task_count=1024][sleep_dur=0][input_data=8][output_data=8]Finished noop tasks in 46.984s
+[num_workers=512][task_count=1024][sleep_dur=0][input_data=8][output_data=8]Throughput  21.795 Tasks/s
+[num_workers=512][task_count=1024][sleep_dur=1][input_data=8][output_data=8]Launched tasks in 42.575s
+[num_workers=512][task_count=1024][sleep_dur=1][input_data=8][output_data=8]Finished noop tasks in 42.613s
+[num_workers=512][task_count=1024][sleep_dur=1][input_data=8][output_data=8]Throughput  24.030 Tasks/s
