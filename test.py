@@ -34,7 +34,7 @@ def test_sequence(num_workers, task_count=1, sleep_dur=0, input_data=0, output_d
     prefix = f"[{num_workers=}][{task_count=}][{sleep_dur=}][{input_data=}][{output_data=}]"
 
     start = time.time()
-    input_string = b'0' * input_data * 10**6
+    input_string = b'0' * input_data
     futures = [sleeper(0, input_string, output_data) for i in range(task_count)]
     launch_done = time.time() - start
     [future.result() for future in futures]
@@ -99,5 +99,5 @@ if __name__ == "__main__":
                 test_sequence(num_workers=int(args.nodes) * int(args.workers_per_node),
                               task_count=task_count,
                               sleep_dur=sleep_dur,
-                              input_data=data_volume,
-                              output_data=data_volume)
+                              input_data=data_volume * 10**6,
+                              output_data=data_volume * 10**6)
