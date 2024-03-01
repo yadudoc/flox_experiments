@@ -1,0 +1,21 @@
+Starting test with workers=
+Launched task.. waiting
+Result : uname_result(system='Linux', node='exp-14-27', release='4.18.0-477.15.1.el8_8.x86_64', version='#1 SMP Wed Jun 28 15:04:18 UTC 2023', machine='x86_64')
+[num_workers=32][task_count=64][sleep_dur=0][input_data=0][output_data=0]Launched tasks in 0.019s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=0][output_data=0]Finished noop tasks in 0.037s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=0][output_data=0]Throughput  1712.813 Tasks/s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=0][output_data=0]Launched tasks in 0.016s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=0][output_data=0]Finished noop tasks in 0.035s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=0][output_data=0]Throughput  1844.372 Tasks/s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=4000000][output_data=4000000]Launched tasks in 1.665s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=4000000][output_data=4000000]Finished noop tasks in 1.709s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=4000000][output_data=4000000]Throughput  37.452 Tasks/s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=4000000][output_data=4000000]Launched tasks in 1.524s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=4000000][output_data=4000000]Finished noop tasks in 1.556s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=4000000][output_data=4000000]Throughput  41.122 Tasks/s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=8000000][output_data=8000000]Launched tasks in 3.848s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=8000000][output_data=8000000]Finished noop tasks in 3.915s
+[num_workers=32][task_count=64][sleep_dur=0][input_data=8000000][output_data=8000000]Throughput  16.347 Tasks/s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=8000000][output_data=8000000]Launched tasks in 3.588s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=8000000][output_data=8000000]Finished noop tasks in 3.660s
+[num_workers=32][task_count=64][sleep_dur=1][input_data=8000000][output_data=8000000]Throughput  17.487 Tasks/s

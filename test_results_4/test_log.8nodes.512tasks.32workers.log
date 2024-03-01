@@ -1,0 +1,54 @@
+Starting test with workers=
+Launched task.. waiting
+Result : uname_result(system='Linux', node='exp-9-38', release='4.18.0-477.15.1.el8_8.x86_64', version='#1 SMP Wed Jun 28 15:04:18 UTC 2023', machine='x86_64')
+[num_workers=256][task_count=512][sleep_dur=0][input_data=0][output_data=0]Launched tasks in 0.205s
+[num_workers=256][task_count=512][sleep_dur=0][input_data=0][output_data=0]Finished noop tasks in 0.220s
+[num_workers=256][task_count=512][sleep_dur=0][input_data=0][output_data=0]Throughput  2323.988 Tasks/s
+[num_workers=256][task_count=512][sleep_dur=1][input_data=0][output_data=0]Launched tasks in 0.163s
+[num_workers=256][task_count=512][sleep_dur=1][input_data=0][output_data=0]Finished noop tasks in 0.177s
+[num_workers=256][task_count=512][sleep_dur=1][input_data=0][output_data=0]Throughput  2885.805 Tasks/s
+[num_workers=256][task_count=512][sleep_dur=0][input_data=4000000][output_data=4000000]Launched tasks in 12.393s
+[num_workers=256][task_count=512][sleep_dur=0][input_data=4000000][output_data=4000000]Finished noop tasks in 12.424s
+[num_workers=256][task_count=512][sleep_dur=0][input_data=4000000][output_data=4000000]Throughput  41.212 Tasks/s
+[num_workers=256][task_count=512][sleep_dur=1][input_data=4000000][output_data=4000000]Launched tasks in 11.574s
+[num_workers=256][task_count=512][sleep_dur=1][input_data=4000000][output_data=4000000]Finished noop tasks in 11.620s
+[num_workers=256][task_count=512][sleep_dur=1][input_data=4000000][output_data=4000000]Throughput  44.062 Tasks/s
+Traceback (most recent call last):
+  File "/home/yadunand/flox_experiments/test.py", line 99, in <module>
+    test_sequence(num_workers=int(args.nodes) * int(args.workers_per_node),
+  File "/home/yadunand/flox_experiments/test.py", line 40, in test_sequence
+    [future.result() for future in futures]
+  File "/home/yadunand/flox_experiments/test.py", line 40, in <listcomp>
+    [future.result() for future in futures]
+     ^^^^^^^^^^^^^^^
+  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/parsl/dataflow/dflow.py", line 302, in handle_exec_update
+    res = self._unwrap_remote_exception_wrapper(future)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/parsl/dataflow/dflow.py", line 570, in _unwrap_remote_exception_wrapper
+    result = future.result()
+             ^^^^^^^^^^^^^^^
+  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/parsl/dataflow/dflow.py", line 627, in launch_if_ready
+    exec_fu = self.launch_task(task_record)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/parsl/dataflow/dflow.py", line 719, in launch_task
+    exec_fu = executor.submit(executable, task_record['resource_specification'], *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/parsl/executors/high_throughput/executor.py", line 608, in submit
+    fn_buf = pack_apply_message(func, args, kwargs,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/parsl/serialize/facade.py", line 61, in pack_apply_message
+    packed_buffer = pack_buffers([b_func, b_args, b_kwargs])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/parsl/serialize/facade.py", line 144, in pack_buffers
+    packed += s_length + buf
+MemoryError
